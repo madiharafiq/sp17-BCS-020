@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-//import 'splashscreen.dart';
+import 'splashscreen.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -7,13 +8,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Quiz App',
+      title: "My Dice App",
       theme: ThemeData(
-
-        fontFamily: "Montserrat",
-
+        primarySwatch: Colors.indigo,
       ),
-     // home: splashscreen(),
+      home: splashscreen(),
     );
   }
 }

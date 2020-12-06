@@ -14,7 +14,8 @@ class _homepageState extends State<homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.red, title: Text('Dice App')),
+      backgroundColor: Colors.orange,
+      appBar: AppBar(backgroundColor: Colors.black, title: Text('My Dice App')),
       drawer: Drawer(
         child: navigationbar(),
       ),
@@ -23,7 +24,7 @@ class _homepageState extends State<homepage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             RaisedButton(
-              color: Colors.red,
+              color: Colors.white,
               child: Text('Simple Level'),
               onPressed: () {
                 Navigator.push(
@@ -36,14 +37,14 @@ class _homepageState extends State<homepage> {
               height: 20,
             ),
             RaisedButton(
-              color: Colors.red,
+              color: Colors.white,
               child: Text('Hard Level'),
-              // onPressed: () {
-              //   Navigator.push(
-              //     context,
-              //     MaterialPageRoute(builder: (context) => MyHomePage()),
-              //   );
-              // },
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Dicepage()),
+                );
+              },
             ),
             SizedBox(
               height: 20,

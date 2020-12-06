@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:diceapp/navigationbar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -47,12 +46,12 @@ class Dicepage extends StatefulWidget {
 
 class _DicepageState extends State<Dicepage> {
   var imageArray = [
-    'dice1.png',
-    'dice2.png',
-    'dice3.png',
-    'dice4.png',
-    'dice5.png',
-    'dice6.png'
+    'one.png',
+    'two.png',
+    'three.png',
+    'four.png',
+    'five.png',
+    'six.png'
   ];
 //var random = new Random();
   int randomIntForDiceOne = Random().nextInt(6);
@@ -69,7 +68,7 @@ class _DicepageState extends State<Dicepage> {
             style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
-                fontSize: 30.0),
+                fontSize: 20.0),
           ),
         ),
         drawer: Drawer(
@@ -80,44 +79,32 @@ class _DicepageState extends State<Dicepage> {
           child: Column(
             children: <Widget>[
               SizedBox(
-                height: 80.0,
+                height: 40.0,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
                   Image.asset(
                     'images/' + imageArray[randomIntForDiceOne],
-                    height: 150,
-                    width: 150,
+                    height: 100,
+                    width: 100,
                   ),
                   Image.asset(
                     'images/' + imageArray[randomIntForDiceTwo],
-                    height: 150,
-                    width: 150,
+                    height: 100,
+                    width: 100,
                   ),
                 ],
               ),
-              // Padding(
-              //   padding: const EdgeInsets.only(bottom: 60),
-              //   child: Text(
-              //     'Sum of Dice = ' +
-              //         (randomIntForDiceOne + randomIntForDiceTwo + 2)
-              //             .toString(),
-              //     style: TextStyle(
-              //       fontSize: 40,
-              //       fontWeight: FontWeight.bold,
-              //       color: Colors.yellowAccent,
-              //     ),
-              //   ),
-              // ),
               SizedBox(
-                height: 150,
+                height: 100,
               ),
 
               Padding(
                 padding: const EdgeInsets.only(top: 20),
                 child: RaisedButton(
-                  child: Text('Winner Dice'),
+                  color: Colors.green,
+                  child: Text('Winner Dice',),
                   onPressed: () {
                     showAlertDialog(context);
                   },
@@ -131,13 +118,6 @@ class _DicepageState extends State<Dicepage> {
                   child: Text('Roll Dice'),
                 ),
               ),
-              // Padding(
-              //   padding: const EdgeInsets.only(top: 10),
-              //   //child: RaisedButton(onPressed: MainMenu,
-              //     child: Text('Exit Game'),
-              //   ),
-              // ),
-              //
               Padding(
                 padding: const EdgeInsets.only(top: 20),
                 child: RaisedButton(

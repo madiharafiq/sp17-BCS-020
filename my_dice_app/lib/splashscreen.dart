@@ -32,7 +32,7 @@ class _splashscreenState extends State<splashscreen> {
             backgroundImage: AssetImage('images/maf.jpg'),
           ),
           Text(
-            'Madiha Rafiq',
+            'Name',
             style: TextStyle(
               fontFamily: 'Pacifico',
               fontSize: 40.0,

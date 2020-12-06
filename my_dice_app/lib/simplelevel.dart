@@ -60,7 +60,7 @@ class _DicepageState extends State<Dicepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.orange,
         appBar: AppBar(
           backgroundColor: Colors.red,
           title: Text(
@@ -100,15 +100,17 @@ class _DicepageState extends State<Dicepage> {
                 height: 100,
               ),
 
-              Padding(
+              SizedBox(
+               child: Padding(
                 padding: const EdgeInsets.only(top: 20),
                 child: RaisedButton(
                   color: Colors.green,
-                  child: Text('Winner Dice',),
+                  child: Text('Winner Dice', style: TextStyle( fontSize: 20.0),),
                   onPressed: () {
                     showAlertDialog(context);
                   },
                 ),
+              ),
               ),
 
               Padding(

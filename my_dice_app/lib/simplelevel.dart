@@ -62,7 +62,7 @@ class _DicepageState extends State<Dicepage> {
     return Scaffold(
         backgroundColor: Colors.orange,
         appBar: AppBar(
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.black,
           title: Text(
             'Simple Level',
             style: TextStyle(

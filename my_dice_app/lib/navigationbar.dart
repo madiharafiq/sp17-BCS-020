@@ -22,7 +22,7 @@ class navigationbar extends StatelessWidget {
                 height: 5.0,
               ),
               Text(
-                "Arslan Ashraf",
+                "Name",
                 style: TextStyle(
                   fontSize: 22.0,
                   fontWeight: FontWeight.w800,

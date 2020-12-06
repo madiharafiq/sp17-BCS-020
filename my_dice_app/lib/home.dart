@@ -15,7 +15,7 @@ class _homepageState extends State<homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.orange,
-      appBar: AppBar(backgroundColor: Colors.black, title: Text('My Dice App')),
+      appBar: AppBar(backgroundColor: Colors.black, title: Text('Select Level')),
       drawer: Drawer(
         child: navigationbar(),
       ),

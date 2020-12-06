@@ -13,3 +13,7 @@ A Dice Application.
 # Simple Level Screen
 
 ![Screenshot_20201206-142054](https://user-images.githubusercontent.com/74812642/101276469-e3d35280-37ce-11eb-8a32-00bd94ae2892.png)
+
+# Simple level Winner Result
+
+![Screenshot_20201206-142100](https://user-images.githubusercontent.com/74812642/101276472-e766d980-37ce-11eb-859c-f7d3e95944e7.png)

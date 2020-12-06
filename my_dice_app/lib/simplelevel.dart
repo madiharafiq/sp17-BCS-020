@@ -135,7 +135,8 @@ class _DicepageState extends State<Dicepage> {
               Padding(
                 padding: const EdgeInsets.only(top: 20),
                 child: RaisedButton(
-                  child: Text('Exit Game'),
+                  color: Colors.red,
+                  child: Text('Exit Game',),
                   onPressed: () {
                     exit(0);
                   },
